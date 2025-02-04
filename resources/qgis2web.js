@@ -73,6 +73,8 @@ var map = new ol.Map({
     })
 });
 
+var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
+map.addControl(layerSwitcher);
 
     var searchLayer = new SearchLayer({
       layer: lyr_Panchayat_1,
